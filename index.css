@@ -1,0 +1,41 @@
+.box {
+  background: red;
+  background-image: url(https://amp.businessinsider.com/images/5654150584307663008b4ed8-750-563.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  image-size: 20%;
+  height: 150px;
+  width: 200px;
+  animation: rotateItself 2s ease-in-out infinite none running;
+}
+
+.margins {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.transform {
+  transform: translate(150px, 20px);
+}
+
+.scale {
+  transform: scale(6,4)
+}
+
+.rotate {
+  transform: rotate(25deg);
+}
+
+.skew {
+  transform: skewX(50deg);
+  transform: skewY(50deg);
+}
+
+@keyframes rotateItself {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
